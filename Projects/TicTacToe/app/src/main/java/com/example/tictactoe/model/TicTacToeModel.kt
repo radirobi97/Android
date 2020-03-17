@@ -39,4 +39,8 @@ object TicTacToeModel {
         return content
     }
 
+    fun isGameEnded(){
+
+    }
+
 }
