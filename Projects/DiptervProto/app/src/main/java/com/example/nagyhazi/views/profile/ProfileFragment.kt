@@ -1,24 +1,15 @@
-package com.example.diptervproto.views.profile
+package com.example.nagyhazi.views.profile
 
-import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
-import com.example.diptervproto.R
-import com.example.diptervproto.utils.REQUEST_CODE_UPLOAD_ACTIVITY
-import com.example.diptervproto.views.upload.UploadActivity
-import kotlinx.android.synthetic.main.activity_upload.*
+import com.example.nagyhazi.R
+import com.example.nagyhazi.utils.REQUEST_CODE_UPLOAD_ACTIVITY
+import com.example.nagyhazi.views.upload.UploadActivity
 import kotlinx.android.synthetic.main.fragment_profile.*
-import java.io.ByteArrayOutputStream
 
 /*
     This fragment displays all user related things.

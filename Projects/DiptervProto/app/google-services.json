@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "676348443145",
+    "firebase_url": "https://diptervproto.firebaseio.com",
+    "project_id": "diptervproto",
+    "storage_bucket": "diptervproto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676348443145:android:f04188d3b597ead6f756d8",
+        "android_client_info": {
+          "package_name": "com.example.diptervproto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676348443145-319lrc5m908pph8jqntv22t89kbe52mo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diptervproto",
+            "certificate_hash": "25e380ef0427ff4ba7a9f8ef0f1f0d2ea1f6f498"
+          }
+        },
+        {
+          "client_id": "676348443145-sbpb6e70h7q6jnhcqgu6i8mso1o2qjkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgJoRmSeR0mZQVG7Vwzk8DTHJZevoZqO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676348443145-sbpb6e70h7q6jnhcqgu6i8mso1o2qjkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

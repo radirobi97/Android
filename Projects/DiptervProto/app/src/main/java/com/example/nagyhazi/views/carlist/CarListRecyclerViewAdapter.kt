@@ -1,4 +1,4 @@
-package com.example.diptervproto.views.carlist
+package com.example.nagyhazi.views.carlist
 
 import android.content.Context
 import android.util.Log
@@ -11,14 +11,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.diptervproto.R
-import com.example.diptervproto.data.models.Car
+import com.example.nagyhazi.R
+import com.example.nagyhazi.data.models.Car
 import kotlinx.android.synthetic.main.car_item.view.*
 import kotlinx.android.synthetic.main.progress_item.view.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class CarListRecyclerViewAdapter(private val activityContext: Context): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 

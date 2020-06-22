@@ -1,4 +1,4 @@
-package com.example.diptervproto.views.search
+package com.example.nagyhazi.views.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.diptervproto.R
+import com.example.nagyhazi.R
 import kotlinx.android.synthetic.main.fragment_search.*
 import java.text.DecimalFormat
 

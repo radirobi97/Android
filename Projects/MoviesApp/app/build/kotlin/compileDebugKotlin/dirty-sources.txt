@@ -1,0 +1,2 @@
+C:\Users\UC_pull\Desktop\MoviesApp\app\src\main\java\com\example\moviesapp\MainActivity.kt
+C:\Users\UC_pull\Desktop\MoviesApp\app\src\main\java\com\example\moviesapp\ui\MovieDetails.kt

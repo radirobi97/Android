@@ -1,17 +1,10 @@
-package com.example.diptervproto.views.carlist
+package com.example.nagyhazi.views.carlist
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.viewModelScope
-import com.example.diptervproto.data.models.Car
-import com.example.diptervproto.data.sources.FirebaseDB
-import com.example.diptervproto.data.sources.FirestoreDB
-import com.example.diptervproto.repositories.CarRepository
-import com.example.diptervproto.room.CarRoomDatabase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import com.example.nagyhazi.data.models.Car
+import com.example.nagyhazi.data.sources.FirebaseDB
 
 class CarViewModel(application: Application): AndroidViewModel(application) {
 

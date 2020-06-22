@@ -1,4 +1,4 @@
-package com.example.diptervproto.room
+package com.example.nagyhazi.room
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

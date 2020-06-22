@@ -1,4 +1,4 @@
-package com.example.diptervproto
+package com.example.nagyhazi
 
 import org.junit.Test
 

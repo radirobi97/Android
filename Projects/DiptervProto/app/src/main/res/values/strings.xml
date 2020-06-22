@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">DiptervProto</string>
+    <string name="email_hint">Email</string>
+    <string name="register_button">Register</string>
+    <string name="account_already">Already have an account? Login</string>
+    <string name="btn_login">Login</string>
+    <string name="register_here">Don\'t have an account? Create one</string>
+    <string name="password_hint">Password</string>
+    <string name="reason_to_login">To see your profile, \n please login!</string>
+    <string name="login_register">Login/Register</string>
+
+    <string-array name="car_types">
+        <item>BMW</item>
+        <item>MAZDA</item>
+        <item>MERCEDES</item>
+        <item>HONDA</item>
+        <item>HYUNDAI</item>
+        <item>SKODA</item>
+        <item>TOYOTA</item>
+    </string-array>
 </resources>

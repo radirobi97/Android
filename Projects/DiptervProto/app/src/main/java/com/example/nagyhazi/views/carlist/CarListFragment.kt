@@ -1,22 +1,18 @@
-package com.example.diptervproto.views.carlist
+package com.example.nagyhazi.views.carlist
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.diptervproto.R
-import com.example.diptervproto.data.models.Car
-import com.example.diptervproto.data.sources.FirebaseDB
-import com.example.diptervproto.utils.PaginationScrollListener
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.nagyhazi.R
+import com.example.nagyhazi.data.models.Car
+import com.example.nagyhazi.utils.PaginationScrollListener
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /*

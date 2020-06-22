@@ -1,8 +1,8 @@
-package com.example.diptervproto.repositories
+package com.example.nagyhazi.repositories
 
 import androidx.lifecycle.LiveData
-import com.example.diptervproto.room.Car
-import com.example.diptervproto.room.CarDao
+import com.example.nagyhazi.room.Car
+import com.example.nagyhazi.room.CarDao
 
 class CarRepository(private val carDao: CarDao) {
 

@@ -1,4 +1,4 @@
-package com.example.diptervproto.data.models
+package com.example.nagyhazi.data.models
 
 import com.google.firebase.database.Exclude
 import java.lang.Exception

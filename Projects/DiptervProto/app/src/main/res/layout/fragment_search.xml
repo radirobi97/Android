@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragmentPredict"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragmentProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:focusableInTouchMode="true">
 
+        <Spinner
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:spinnerMode="dialog"
+            android:background="@drawable/spinner_background"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/spinnerModel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerType"
+            android:spinnerMode="dialog"
+            android:background="@drawable/spinner_background"/>
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            app:steps="100000"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rangeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/spinnerModel"
+            app:min_value="0"
+            app:max_value="10000000"
+            app:data_type="_integer"
+            app:bar_color="@android:color/black"
+            app:bar_highlight_color="@color/colorAccent"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="@id/rangeSeekBar"
+            app:layout_constraintTop_toBottomOf="@id/rangeSeekBar"
+            android:text="0"
+            android:textSize="20sp"
+            android:id="@+id/tvRangeMin"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintRight_toRightOf="@id/rangeSeekBar"
+            app:layout_constraintTop_toBottomOf="@id/rangeSeekBar"
+            android:text="100000000"
+            android:id="@+id/tvRangeMax"
+            android:textStyle="bold"/>
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpload"
+            app:layout_constraintTop_toBottomOf="@id/tvRangeMax"
+            android:layout_marginTop="15dp"
+            android:text="search"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/spinnerType"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerModel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

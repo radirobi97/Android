@@ -1,4 +1,4 @@
-package com.example.diptervproto.views
+package com.example.nagyhazi.views
 
 import android.app.Activity
 import android.content.Intent
@@ -6,17 +6,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.diptervproto.R
-import com.example.diptervproto.services.LogoutService
-import com.example.diptervproto.views.carlist.CarListFragment
-import com.example.diptervproto.views.profile.LoginFragment
-import com.example.diptervproto.views.search.SearchFragment
-import com.example.diptervproto.views.profile.ProfileFragment
-import com.example.diptervproto.utils.REQUEST_CODE_LOGIN_ACTIVITY
-import com.example.diptervproto.utils.REQUEST_CODE_UPLOAD_ACTIVITY
-import com.example.diptervproto.views.search.SearchDialogFragment
+import com.example.nagyhazi.R
+import com.example.nagyhazi.services.LogoutService
+import com.example.nagyhazi.views.carlist.CarListFragment
+import com.example.nagyhazi.views.profile.LoginFragment
+import com.example.nagyhazi.views.search.SearchFragment
+import com.example.nagyhazi.views.profile.ProfileFragment
+import com.example.nagyhazi.utils.REQUEST_CODE_LOGIN_ACTIVITY
+import com.example.nagyhazi.utils.REQUEST_CODE_UPLOAD_ACTIVITY
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 

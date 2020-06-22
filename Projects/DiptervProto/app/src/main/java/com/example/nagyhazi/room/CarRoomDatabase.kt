@@ -1,4 +1,4 @@
-package com.example.diptervproto.room
+package com.example.nagyhazi.room
 
 import android.content.Context
 import android.util.Log
@@ -6,7 +6,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.diptervproto.R
+import com.example.nagyhazi.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
