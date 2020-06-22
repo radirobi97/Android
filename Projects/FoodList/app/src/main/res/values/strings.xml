@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FoodList</string>
+    <string name="exit_dialog_title">Are you sure?</string>
+    <string name="option_yes">YES</string>
+    <string name="option_no">NO</string>
+    <string name="exit_dialog_message">SURE,SURE,SURE?</string>
+</resources>

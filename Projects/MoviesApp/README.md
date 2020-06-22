@@ -1,6 +1,6 @@
 # MovieApp
 
-I used this project to practice the trending android libraries. Thanks goes to [**Topcorn**](https://github.com/theapache64/topcorn).
+I used this project to practice the trending android libraries. Thanks goes to [**MovieApp**](https://github.com/theapache64/topcorn).
 
 ### Features and main components:
 - **SplashActivity**
