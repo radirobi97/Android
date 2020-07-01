@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="label_rating">Rating: </string>
+    <string name="label_director">"Director: "</string>
+    <string name="label_starring">"Starring: "</string>
+    <string name="label_genre">"Genre: "</string>
+    <string name="action_open_imdb">OPEN IMDB</string>
+    <string name="feed_toast_sort_year">Sorted by year</string>
+    <string name="feed_toast_sort_rating">Sorted by rating</string>
+</resources>

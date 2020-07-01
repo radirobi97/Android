@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_movie_margin">4dp</dimen>
+    <dimen name="item_title_margin">6dp</dimen>
+    <dimen name="item_feed_margin">18dp</dimen>
+    <dimen name="movies_margin">18dp</dimen>
+    <dimen name="toolbar_title_margin">18dp</dimen>
+    <dimen name="toolbar_icon_size">32dp</dimen>
+    <dimen name="movie_details_top_margin">6dp</dimen>
+</resources>

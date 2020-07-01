@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activities.movie.MovieActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ib_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/toolbarIconColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_poster"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:transitionName="poster"
+            app:layout_constraintStart_toStartOf="@id/ib_go_back"
+            app:layout_constraintTop_toBottomOf="@id/ib_go_back">
+
+            <ImageView
+                android:id="@+id/iv_mcv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_label_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Rating: "
+            app:layout_constraintStart_toEndOf="@id/mcv_poster"
+            app:layout_constraintTop_toTopOf="@id/mcv_poster" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_label_rating"
+            app:layout_constraintTop_toTopOf="@id/tv_label_rating"
+            tools:text="8.5" />
+
+        <TextView
+            android:id="@+id/tv_label_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movie_details_top_margin"
+            android:text="@string/label_director"
+            app:layout_constraintStart_toStartOf="@id/tv_label_rating"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating"/>
+
+        <TextView
+            android:id="@+id/tv_director"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_rating"
+            app:layout_constraintStart_toEndOf="@id/tv_label_director"
+            app:layout_constraintTop_toTopOf="@id/tv_label_director"
+            tools:text="Guy Ritchie"/>
+
+        <TextView
+            android:id="@+id/tv_label_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movie_details_top_margin"
+            android:text="@string/label_starring"
+            app:layout_constraintStart_toStartOf="@id/tv_label_rating"
+            app:layout_constraintTop_toBottomOf="@id/tv_director"/>
+
+        <TextView
+            android:id="@+id/tv_actor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_director"
+            app:layout_constraintStart_toEndOf="@id/tv_label_actor"
+            app:layout_constraintTop_toTopOf="@id/tv_label_actor"
+            tools:text="Tom Cruise, Robert Doney Jr.dsfdfggf"/>
+
+        <TextView
+            android:id="@+id/tv_label_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movie_details_top_margin"
+            android:text="@string/label_genre"
+            app:layout_constraintStart_toStartOf="@id/tv_label_rating"
+            app:layout_constraintTop_toBottomOf="@id/tv_actor" />
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_actor"
+            app:layout_constraintStart_toEndOf="@id/tv_label_genre"
+            app:layout_constraintTop_toTopOf="@id/tv_label_genre"
+            tools:text="Action, Adventure"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            android:transitionName="title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/mcv_poster"
+            app:layout_constraintTop_toBottomOf="@id/mcv_poster"
+            tools:text="@tools:sample/lorem"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/secondaryTextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+        <Button
+            android:id="@+id/btn_movie_open_imdb"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_open_imdb"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_description"
+            app:layout_constraintStart_toStartOf="@id/tv_description"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
