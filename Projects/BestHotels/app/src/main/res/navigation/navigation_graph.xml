@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/locationSearchFragment">
+
+    <fragment
+        android:id="@+id/locationSearchFragment"
+        android:name="com.example.besthotels.ui.fragments.location.LocationSearchFragment"
+        android:label="fragment_location_search"
+        tools:layout="@layout/fragment_location_search">
+        <action
+            android:id="@+id/action_locationSearchFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.example.besthotels.ui.fragments.hotels.HotelFragment"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel">
+        <action
+            android:id="@+id/action_hotelFragment_to_locationSearchFragment"
+            app:destination="@id/locationSearchFragment" />
+        <action
+            android:id="@+id/action_hotelFragment_to_hotelDetailsFragment"
+            app:destination="@id/hotelDetailsFragment" />
+        <action
+            android:id="@+id/action_hotelFragment_to_hotelFilterFragment"
+            app:destination="@id/hotelFilterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotelDetailsFragment"
+        android:name="com.example.besthotels.ui.fragments.detail.HotelDetailsFragment"
+        android:label="fragment_hotel_details"
+        tools:layout="@layout/fragment_hotel_details">
+        <argument
+            android:name="hotel_location_id"
+            app:argType="integer" />
+        <argument
+            android:name="hotel_image"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="hotel_name"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_hotelDetailsFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotelFilterFragment"
+        android:name="com.example.besthotels.ui.fragments.filter.HotelFilterFragment"
+        android:label="fragment_hotel_filter"
+        tools:layout="@layout/fragment_hotel_filter">
+        <action
+            android:id="@+id/action_hotelFilterFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+        <action
+            android:id="@+id/action_hotelFilterFragment_to_hotelAmenityFragment"
+            app:destination="@id/hotelAmenityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelAmenityFragment"
+        android:name="com.example.besthotels.ui.fragments.amenities.HotelAmenityFragment"
+        android:label="fragment_hotel_amenity"
+        tools:layout="@layout/fragment_hotel_amenity" >
+        <action
+            android:id="@+id/action_hotelAmenityFragment_to_hotelFilterFragment"
+            app:destination="@id/hotelFilterFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_hotel_details"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/hotelDetailsToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/hotelDetailsBackIb"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/colorPrimary"
+                            android:src="@drawable/ic_back_arrow" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="Hotel Details"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.MaterialToolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ImageView
+                android:id="@+id/hotelDetailsIv"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appbar_hotel_details" />
+
+            <TextView
+                android:id="@+id/hotelDetailsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hotelDetailsIv"
+                tools:text="LOOOOOOOOOOOOOOOOL" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                app:layout_constraintTop_toBottomOf="@id/hotelDetailsName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/progressBarHotelDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleLarge" />
+
+            <ImageView
+                android:id="@+id/addressIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_address"
+                app:layout_constraintLeft_toLeftOf="@id/hotelDetailsName"
+                app:layout_constraintTop_toBottomOf="@id/hotelDetailsName" />
+
+            <TextView
+                android:id="@+id/hotelDetailsAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                app:layout_constraintBottom_toBottomOf="@id/addressIcon"
+                app:layout_constraintLeft_toRightOf="@id/addressIcon"
+                tools:text="LOOOOOOOOOOOOOOOOL" />
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_phone"
+                app:layout_constraintLeft_toLeftOf="@id/addressIcon"
+                app:layout_constraintTop_toBottomOf="@id/addressIcon" />
+
+            <TextView
+                android:id="@+id/hotelDetailsPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                app:layout_constraintBottom_toBottomOf="@id/phoneIcon"
+                app:layout_constraintLeft_toRightOf="@id/phoneIcon"
+                tools:text="LOOOOOOOOOOOOOOOOL" />
+
+
+            <ImageView
+                android:id="@+id/rankingIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_ranking"
+                app:layout_constraintLeft_toLeftOf="@id/phoneIcon"
+                app:layout_constraintTop_toBottomOf="@id/phoneIcon" />
+
+            <TextView
+                android:id="@+id/hotelDetailsRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                app:layout_constraintBottom_toBottomOf="@id/rankingIcon"
+                app:layout_constraintLeft_toRightOf="@id/rankingIcon"
+                tools:text="LOOOOOOOOOOOOOOOOL" />
+
+            <TextView
+                android:id="@+id/hotelDetailsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                app:layout_constraintLeft_toLeftOf="@id/rankingIcon"
+                app:layout_constraintTop_toBottomOf="@id/hotelDetailsRanking"
+                tools:text="LOOOO" />
+
+            <TextView
+                android:id="@+id/perNightTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintLeft_toRightOf="@id/hotelDetailsPrice"
+                app:layout_constraintTop_toTopOf="@id/hotelDetailsPrice"
+                tools:text="LOOOL" />
+
+            <View
+                android:id="@+id/hotelDetailsSeparator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="@id/hotelDetailsPrice"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/perNightTv" />
+
+            <TextView
+                android:id="@+id/hotelDetailsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintLeft_toLeftOf="@id/hotelDetailsPrice"
+                app:layout_constraintTop_toBottomOf="@id/hotelDetailsSeparator"
+                tools:text="LOOOOOOL" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_amenity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/hotelDetailsDescription"
+                app:layout_constraintRight_toRightOf="@id/hotelDetailsSeparator"
+                app:layout_constraintTop_toBottomOf="@id/hotelDetailsDescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

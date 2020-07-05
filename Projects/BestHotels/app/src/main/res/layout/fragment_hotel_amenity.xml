@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.amenities.HotelAmenityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp">
+
+        <ImageView
+            android:id="@+id/iv_wifi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_wifi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Free Internet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_wifi"
+            app:layout_constraintTop_toTopOf="@id/iv_wifi" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_wifi"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_wifi" />
+
+        <ImageView
+            android:id="@+id/iv_parking"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_parking"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_wifi" />
+
+        <TextView
+            android:id="@+id/tv_parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Free Parking"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_parking"
+            app:layout_constraintTop_toTopOf="@id/iv_parking" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_parking"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_parking" />
+
+
+        <ImageView
+            android:id="@+id/iv_room"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_room_service"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_parking" />
+
+        <TextView
+            android:id="@+id/tv_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Room Service"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_room"
+            app:layout_constraintTop_toTopOf="@id/iv_room" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_room"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_room" />
+
+
+        <ImageView
+            android:id="@+id/iv_fitness"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_fitness"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_room" />
+
+        <TextView
+            android:id="@+id/tv_fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Fitness Center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_fitness"
+            app:layout_constraintTop_toTopOf="@id/iv_fitness" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_fitness"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_fitness" />
+
+
+        <ImageView
+            android:id="@+id/iv_swimming"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_pool"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_fitness" />
+
+        <TextView
+            android:id="@+id/tv_swimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Swimming Pool"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_swimming"
+            app:layout_constraintTop_toTopOf="@id/iv_swimming" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_swimming"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_swimming" />
+
+
+        <ImageView
+            android:id="@+id/iv_pets"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_pet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_swimming" />
+
+        <TextView
+            android:id="@+id/tv_pets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Pets Allowed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_pets"
+            app:layout_constraintTop_toTopOf="@id/iv_pets" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_pets"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_pets" />
+
+
+        <ImageView
+            android:id="@+id/iv_casino"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_casino"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_pets" />
+
+        <TextView
+            android:id="@+id/tv_casino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Casino"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_casino"
+            app:layout_constraintTop_toTopOf="@id/iv_casino" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_casino"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_casino" />
+
+
+        <ImageView
+            android:id="@+id/iv_restaurant"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_restaurant"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_casino" />
+
+        <TextView
+            android:id="@+id/tv_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Restaurant"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_restaurant"
+            app:layout_constraintTop_toTopOf="@id/iv_restaurant" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_restaurant"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_restaurant" />
+
+
+        <ImageView
+            android:id="@+id/iv_laundry"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_laundry"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_restaurant" />
+
+        <TextView
+            android:id="@+id/tv_laundry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Laundry"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_laundry"
+            app:layout_constraintTop_toTopOf="@id/iv_laundry" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_laundry"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_laundry" />
+
+
+        <ImageView
+            android:id="@+id/iv_spa"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_spa"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_laundry" />
+
+        <TextView
+            android:id="@+id/tv_spa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Spa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_spa"
+            app:layout_constraintTop_toTopOf="@id/iv_spa" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_spa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_spa" />
+
+
+        <ImageView
+            android:id="@+id/iv_non_smoke"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_non_smoke"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_spa" />
+
+        <TextView
+            android:id="@+id/tv_non_smoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Non-Smoking Hotel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/iv_non_smoke"
+            app:layout_constraintTop_toTopOf="@id/iv_non_smoke" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_non_smoke"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_non_smoke" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_amenity_done"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="Done"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_non_smoke" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>
