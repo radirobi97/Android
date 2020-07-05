@@ -17,8 +17,8 @@ class NetworkModule {
     fun provideInterceptor() = Interceptor{ chain ->
         val request = chain.request()
             .newBuilder()
-            .header("x-rapidapi-host","tripadvisor1.p.rapidapi.com")
-            .header("x-rapidapi-key", "8b3c69ed06msh8876d4e5a0eb7bap10ab03jsnbaa6d75c8c2e")
+            .header("x-rapidapi-host","THIS SHOULD BE REPLACED"")
+            .header("x-rapidapi-key", "THIS SHOULD BE REPLACED")
             .build()
         chain.proceed(request)
     }
