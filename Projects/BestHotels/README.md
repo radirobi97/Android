@@ -1,3 +1,3 @@
 # BestHotels
 
-![screenshots](/screenshots/allinone.png)
+![screenshots](screenshots/allinone.png)
