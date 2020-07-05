@@ -3,7 +3,7 @@
 ![screenshots](screenshots/allinone.png)
 
 ## Description
-Purpose of this application is to find hotels all around the world. It's has been built with **latest-trending tools.**
+Purpose of this application is to find hotels all around the world. It's been built with **latest-trending tools.**
 
 ## Download
 - Download APK from [here](https://drive.google.com/file/d/1UoqekdPPZDa4DXuf-KNF02wzoAROH6b3/view?usp=sharing)
